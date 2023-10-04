@@ -40,7 +40,7 @@ public class EditScreenServlet extends HttpServlet{
 			e.printStackTrace();
 		}
 		//Generate the connection
-		try (Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/userdb","root","root");
+		try (Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/database-name","username","password");
 				PreparedStatement ps=con.prepareStatement(query);){
 			//set value
 			ps.setInt(1, id);
