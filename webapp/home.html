@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Registration</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+	#frm{
+		width:500px;
+		margin:auto;
+		margin-top:15px;
+	}
+	marquee{
+		margin-top:5px;
+	}
+</style>
+</head>
+<body class="contaner-fluid" style="background-color:lightYellow">
+	<h1 style="text-align:center; background-color:Black; color:white"><br>User Management System<br><br></h1>
+	<marquee><h2 class="text-primary">Register Here !!</h2></marquee>
+	<form action="register" method="post" class="form card " id="frm" style="border-style:solid; border-width:medium; border-color:black; border-radius:5px">
+		<h2 class="bg-danger text-white card-header">Registration Form</h2>
+		<table class="table table-hover">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="userName" required></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td><input type="text" name="mobile" required></td>
+			</tr>
+			<tr>
+				<td>Date Of Birth</td>
+				<td><input type="date" name="dob" required></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><select name="city">
+					<option value="pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="Kochi">Kochi</option>
+					<option value="kolkata">kolkata</option>
+					<option value="Hyderabad">Hyderabad</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Lucknow">Lucknow</option>
+					<option value="Nagpur">Nagpur</option>
+					<option value="Patna">Patna</option>
+					<option value="Ahmedabad">Ahmedabad</option>
+					<option value="Bhopal">Bhopal</option>
+					<option value="Allahabad">Allahabad</option>
+					<option value="Surat">Surat</option>
+					<option value="Jaipur">Jaipur</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="Male">Male &nbsp;
+				<input type="radio" name="gender" value="Female">Female &nbsp;
+				<input type="radio" name="gender" value="Others">Others &nbsp;
+				<input type="radio" name="gender" value="Prefer not Say">Prefer not Say
+				</td>
+			</tr>
+			<tr class="card-footer">
+				<td>&nbsp;&nbsp;<button type="submit" class="btn btn-outline-success">Register</button></td>
+				<td>&nbsp;&nbsp;<button type="reset" class="btn btn-outline-danger">Cancel</button>
+				<br>
+			</tr>
+		</table>
+		<button class="btn btn-outline-dark d-block "><a href="showdata">Show Users</a></button>
+	</form>
+</body>
+</html>
