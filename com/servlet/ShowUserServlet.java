@@ -37,7 +37,7 @@ public class ShowUserServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		//Generate the connection
-		try (Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/userdb","root","root");
+		try (Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/database-name","username","password");
 				PreparedStatement ps=con.prepareStatement(query);){
 			ResultSet rs=ps.executeQuery();
 			pw.println("<body style='background-color:lightYellow'>");
