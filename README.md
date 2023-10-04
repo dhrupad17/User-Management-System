@@ -8,13 +8,10 @@ file in the deployment web page.There is a registration form asking various inpu
 in the database.The project allows to retreive the users list and also editing and deleting every individual users thus providing dynamic response
 and dynamic updation of the database.In the server side I have used Servlet component for each module allowing CRUD Operations(Create,Retrieve,Update,Delete).
 
-## Steps involved in the Project
-
-- Step 1: In the Eclipse Ide first created the deployment directory for this dynamic project.
+### Deployement Directory Structure
 
   ![image](https://github.com/dhrupad17/User-Management-System/assets/91726340/d989e391-e216-45cc-8cb8-2bdeb64d11ae)
 
-- 
 
 ## Application Overview:-
 
